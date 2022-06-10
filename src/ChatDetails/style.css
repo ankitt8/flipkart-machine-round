@@ -25,6 +25,9 @@
     border: 1px solid #878787;
     padding: 18px 18px 0 18px;
     height: 80px;
+    position: sticky;
+    top: 0;
+    background: white;
 }
 
 .chatInputContainer {
