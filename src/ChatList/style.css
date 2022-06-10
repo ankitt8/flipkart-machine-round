@@ -1,0 +1,47 @@
+.chatListRow {
+    min-height: 50px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 18px;
+    border-bottom: 1px solid #878787;
+}
+.chatLogoContainer{
+    margin-right: 18px;
+}
+.chatLogo {
+    height: 50px;
+    width: 50px;
+}
+
+.summary {
+    display: flex;
+}
+
+.chatTitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+.orderID {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.lastChatMessage {
+    margin: 10px 0 0 0;
+    color: #878787;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.lastDate {
+    color: #878787;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.activeChat {
+    background-color: lightgray;
+}

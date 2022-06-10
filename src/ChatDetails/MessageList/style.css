@@ -1,0 +1,22 @@
+.chatContainer {
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: #027CD5;
+    margin-bottom: 20px;
+}
+.chatBot {
+    /* position: fixed;
+    left: 40%; */
+    align-self: flex-start;
+    background-color: white;
+}
+.chatUser {
+    /* position: fixed;
+    right: 0; */
+    align-self: flex-end;
+}

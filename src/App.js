@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import { ChatList } from "./ChatList";
+import { Header } from "./Header";
+import { ChatDetails } from "./ChatDetails";
+import "./App.css";
 function App() {
+  const [chatDetails, setChatDetails] = useState(null);
+  const handleChatRowClick = (chat) => {
+    setChatDetails({ ...chat });
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div
+        style={{ width: chatDetails ? "50%" : "100%" }}
+        className="chatListHeaderWrapper"
+      >
+        <Header />
+        <ChatList
+          handleChatRowClick={handleChatRowClick}
+          chatDetails={chatDetails}
+        />
+      </div>
+      {chatDetails && <ChatDetails chatDetails={chatDetails} />}
     </div>
   );
 }
